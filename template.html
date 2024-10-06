@@ -1,0 +1,158 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      p {
+        font-size: 14px;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 2px;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        padding: 10px;
+      }
+      .grid-container2 {
+        display: grid;
+        grid-template-columns: 200px auto;
+        padding: 10px;
+      }
+      .title {
+        text-align: left;
+      }
+      .grid-item {
+        text-align: right;
+      }
+      .grid-item2 {
+        text-align: left;
+      }
+    </style>
+  </head>
+
+  <body style="padding: 16px">
+    <div style="display: flex; justify-content: flex-end">
+      <div style="margin-bottom: 24px; text-align: right; margin-top: 24px">
+        <p>Telephone - 0112566566 / 0701221122</p>
+        <p>Fax - 2566566</p>
+        <p>Email - support@nuromed.lk</p>
+      </div>
+    </div>
+
+    <div style="display: flex; justify-content: space-between">
+      <div>
+        <p>Name : {{fullname}}</p>
+        <p>Age {{dob}} / Gender : {{gender}}</p>
+        <p>NIC : {{nic}}</p>
+        <p>Ref Dr : {{doctor}}</p>
+        <p>Ref No : {{invoiceRef}}</p>
+      </div>
+
+      <div style="text-align: right">
+        <p>Sample Type : CBP</p>
+        <p>Registered On : 2022.11.13</p>
+        <p>Collected On : 2022.11.13</p>
+        <p>Reported On : 2022.11.13</p>
+      </div>
+    </div>
+
+    <div style="margin-bottom: 24px; margin-top: 24px"><hr /></div>
+
+    <div style="text-align: center"><h3>Complete Blood Picture (CBP)</h3></div>
+
+    <div class="grid-container">
+      <div class="title" style="margin-bottom: 16px">
+        <p><b>Test Name</b></p>
+      </div>
+      <div class="grid-item" style="margin-bottom: 16px">
+        <p><b>Observerd Values</b></p>
+      </div>
+      <div class="grid-item" style="margin-bottom: 16px">
+        <p><b>Units</b></p>
+      </div>
+      <div class="grid-item" style="margin-bottom: 16px">
+        <p><b>Biological Reference Intervals</b></p>
+      </div>
+
+      <div class="title"><p>HEMOGLOBIN</p></div>
+      <div class="grid-item"><p>{{HEMOGLOBIN}}</p></div>
+      <div class="grid-item"><p>gm/dL</p></div>
+      <div class="grid-item"><p>11.1 - 14.6</p></div>
+
+      <div class="title"><p>PCV</p></div>
+      <div class="grid-item"><p>{{PCV}}</p></div>
+      <div class="grid-item"><p>%</p></div>
+      <div class="grid-item"><p>30 - 38</p></div>
+
+      <div class="title"><p>Total RBC Count</p></div>
+      <div class="grid-item"><p>{{TRBC}}</p></div>
+      <div class="grid-item"><p>millions/cumm</p></div>
+      <div class="grid-item"><p>3.9 - 5.2</p></div>
+
+      <div class="title"><p>Platelet Count</p></div>
+      <div class="grid-item"><p>{{platelet}}</p></div>
+      <div class="grid-item"><p>lakhs/cumm</p></div>
+      <div class="grid-item"><p>2.0 - 5.5</p></div>
+
+      <div class="title"><p>Total WBC Count</p></div>
+      <div class="grid-item"><p>{{TWBC}}</p></div>
+      <div class="grid-item"><p>cells/cumm</p></div>
+      <div class="grid-item"><p>5000 - 16000</p></div>
+
+      <div style="margin-bottom: 12px; margin-top: 12px"></div>
+      <div style="margin-bottom: 12px; margin-top: 12px"></div>
+      <div style="margin-bottom: 12px; margin-top: 12px"></div>
+      <div style="margin-bottom: 12px; margin-top: 12px"></div>
+
+      <div class="title"><p>NEUTROPHILS</p></div>
+      <div class="grid-item"><p>{{NEUTROPHILS}}</p></div>
+      <div class="grid-item"><p>%</p></div>
+      <div class="grid-item"><p>30 - 53</p></div>
+
+      <div class="title"><p>LYMPHOCYTES</p></div>
+      <div class="grid-item"><p>{{LYMPHOCYTES}}</p></div>
+      <div class="grid-item"><p>%</p></div>
+      <div class="grid-item"><p>58 - 69</p></div>
+
+      <div class="title"><p>EOSINOPHILS</p></div>
+      <div class="grid-item"><p>{{EOSINOPHILS}}</p></div>
+      <div class="grid-item"><p>%</p></div>
+      <div class="grid-item"><p>2 - 6</p></div>
+
+      <div class="title"><p>MONOCYTES</p></div>
+      <div class="grid-item"><p>{{MONOCYTES}}</p></div>
+      <div class="grid-item"><p>%</p></div>
+      <div class="grid-item"><p>3 - 7</p></div>
+
+      <div class="title"><p>BASOPHILS</p></div>
+      <div class="grid-item"><p>{{BASOPHILS}}</p></div>
+      <div class="grid-item"><p>%</p></div>
+      <div class="grid-item"><p>0 - 2</p></div>
+
+      <div style="margin-bottom: 12px; margin-top: 12px"></div>
+      <div style="margin-bottom: 12px; margin-top: 12px"></div>
+      <div style="margin-bottom: 12px; margin-top: 12px"></div>
+      <div style="margin-bottom: 12px; margin-top: 12px"></div>
+    </div>
+
+    <div class="grid-container2">
+      <div class="grid-item2"><p>R B C MORPHOLOGY</p></div>
+      <div class="grid-item2"><p>NORMOCYTIC NORMOCHROMIC</p></div>
+      <div class="grid-item2"><p>W B C</p></div>
+      <div class="grid-item2">
+        <p>LEUCOPENIA WITH NETROPHILIC PREDOMINANCE</p>
+      </div>
+      <div class="grid-item2"><p>PLATEKETS</p></div>
+      <div class="grid-item2"><p>ADEQUATE</p></div>
+    </div>
+
+    <div style="margin-bottom: 24px; margin-top: 24px"><hr /></div>
+
+    <div style="display: flex; justify-content: center; margin-bottom: 24px">
+      <img src="{{{image}}}" style="width: 250px" />
+    </div>
+    <div style="display: flex; justify-content: center">
+      <p><b>SCAN ME</b></p>
+    </div>
+  </body>
+</html>

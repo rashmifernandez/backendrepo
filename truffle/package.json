@@ -1,0 +1,24 @@
+{
+  "name": "neuromed",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Gihan",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.7.3",
+    "crypto-js": "^4.1.1",
+    "dotenv": "^16.0.1",
+    "sha256": "^0.2.0",
+    "truffle-contract-size": "^2.0.1"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "install": "^0.13.0",
+    "mocha": "^10.0.0",
+    "npm": "^8.19.2"
+  }
+}

@@ -1,0 +1,144 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      p {
+        font-size: 14px;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 2px;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        padding: 10px;
+      }
+      .grid-container2 {
+        display: grid;
+        grid-template-columns: 200px auto;
+        padding: 10px;
+      }
+      .title {
+        text-align: left;
+      }
+      .grid-item {
+        text-align: right;
+      }
+      .grid-item2 {
+        text-align: left;
+      }
+    </style>
+  </head>
+
+  <body style="padding: 16px">
+    <div style="display: flex; justify-content: flex-end">
+      <div style="margin-bottom: 24px; text-align: right; margin-top: 24px">
+        <p>Telephone - 0112566566 / 0701221122</p>
+        <p>Fax - 2566566</p>
+        <p>Email - support@nuromed.lk</p>
+      </div>
+    </div>
+
+    <div style="display: flex; justify-content: space-between">
+      <div>
+        <p>Name : {{fullname}}</p>
+        <p>Age {{dob}} / Gender : {{gender}}</p>
+        <p>NIC : {{nic}}</p>
+        <p>Ref Dr : {{doctor}}</p>
+        <p>Ref No : {{invoiceRef}}</p>
+      </div>
+
+      <div style="text-align: right">
+        <p>Sample Type : LFR</p>
+        <p>Registered On : 2022.11.13</p>
+        <p>Collected On : 2022.11.13</p>
+        <p>Reported On : 2022.11.13</p>
+      </div>
+    </div>
+
+    <div style="margin-bottom: 24px; margin-top: 24px"><hr /></div>
+
+    <div style="text-align: center"><h3>Liver Function Report (LFR)</h3></div>
+
+    <div class="grid-container">
+      <div class="title" style="margin-bottom: 16px">
+        <p><b>Test Name</b></p>
+      </div>
+      <div class="grid-item" style="margin-bottom: 16px">
+        <p><b>Observerd Values</b></p>
+      </div>
+      <div class="grid-item" style="margin-bottom: 16px">
+        <p><b>Units</b></p>
+      </div>
+      <div class="grid-item" style="margin-bottom: 16px">
+        <p><b>Biological Reference Intervals</b></p>
+      </div>
+
+      <div class="title"><p>Biiirubin Total</p></div>
+      <div class="grid-item"><p>{{biiirubinTotal}}</p></div>
+      <div class="grid-item"><p>mG/dL</p></div>
+      <div class="grid-item"><p>0.2 - 1.1</p></div>
+
+      <div class="title"><p>Biiirubin Direct</p></div>
+      <div class="grid-item"><p>{{biiirubinDirect}}</p></div>
+      <div class="grid-item"><p>mG/dL</p></div>
+      <div class="grid-item"><p>0.1 - 0.70</p></div>
+
+      <div class="title"><p>Biiirubin Indirect</p></div>
+      <div class="grid-item"><p>{{biiirubinIndirect}}</p></div>
+      <div class="grid-item"><p>mG/dL</p></div>
+      <div class="grid-item"><p>0.1 - 0.40</p></div>
+
+      <div class="title"><p>SGPT (ALT)</p></div>
+      <div class="grid-item"><p>{{sgpt}}</p></div>
+      <div class="grid-item"><p>u/L</p></div>
+      <div class="grid-item"><p>5 - 41</p></div>
+
+      <div class="title"><p>SGOT (AST)</p></div>
+      <div class="grid-item"><p>{{sgot}}</p></div>
+      <div class="grid-item"><p>u/L</p></div>
+      <div class="grid-item"><p>5 - 37</p></div>
+
+      <div class="title"><p>Alkaline Phosphatase</p></div>
+      <div class="grid-item"><p>{{alkalinePhosphatase}}</p></div>
+      <div class="grid-item"><p>u/L</p></div>
+      <div class="grid-item"><p>65 - 306</p></div>
+
+      <div class="title"><p>Total Proteins</p></div>
+      <div class="grid-item"><p>{{totalProteins}}</p></div>
+      <div class="grid-item"><p>G/dL</p></div>
+      <div class="grid-item"><p>6.4 - 8.3</p></div>
+
+      <div class="title"><p>Albumin</p></div>
+      <div class="grid-item"><p>{{albumin}}</p></div>
+      <div class="grid-item"><p>G/dL</p></div>
+      <div class="grid-item"><p>3.4 - 5.4</p></div>
+
+      <div class="title"><p>Globulin</p></div>
+      <div class="grid-item"><p>{{globulin}}</p></div>
+      <div class="grid-item"><p>G/dL</p></div>
+      <div class="grid-item"><p>2.5 - 3.5</p></div>
+
+      <div class="title"><p>A/G Ratio</p></div>
+      <div class="grid-item"><p>{{agRatio}}</p></div>
+      <div class="grid-item"><p>-</p></div>
+      <div class="grid-item"><p>-</p></div>
+    </div>
+
+    <div style="margin-top: 24px; text-align: center; margin-bottom: 24px">
+      <p>*Reference Ranges Of Alk Phosphatase For Children:</p>
+      <p>1-12 Years: &#60;727</p>
+      <p>13-17 Years: Males &#60;935 Females &#60;448</p>
+      <p>Tests are performed on fully computerized EMP-168 autoanalyzer.</p>
+    </div>
+
+    <div style="margin-bottom: 24px; margin-top: 24px"><hr /></div>
+
+    <div style="display: flex; justify-content: center; margin-bottom: 24px">
+      <img src="{{{image}}}" style="width: 250px" />
+    </div>
+    <div style="display: flex; justify-content: center">
+      <p><b>SCAN ME</b></p>
+    </div>
+  </body>
+</html>
